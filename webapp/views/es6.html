@@ -1,0 +1,85 @@
+<html>
+
+<head>
+
+	<title>ES6 JavaScript</title>
+	
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../resources/js-lib/bootstrap/bootstrap.min.css" media="all" />
+	
+	<script src="../resources/js-lib/jquery/jquery-1.11.3.js"></script>
+	<script src="../resources/js-lib/bootstrap/bootstrap.min.js"></script>
+	<script src="../resources/js/es6.js"></script>
+	<script src="../resources/js/classes/User.js"></script>
+		
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<div class="row">
+		
+			<div style="border:1px solid #ddd;" class="col-xs-3">
+				<p onclick="es6.stringInterpolation()">String Interpolation: </p>
+				<p id="stringInterpolation"></p>
+			</div>
+			
+			<div style="border:1px solid #ddd;" class="col-xs-3">
+				<p onclick="es6.arrows()">Arrows: </p>
+				<p id="arrows"></p>
+			</div>
+			
+			<div style="border:1px solid #ddd;" class="col-xs-3">
+				<p>Default Param(<span onclick="es6.defaultParam()"> default </span> | <span onclick="es6.defaultParam(123)"> 123 </span>): </p>
+				<p id="defaultParam"></p>
+			</div>
+			
+			<div style="border:1px solid #ddd;" class="col-xs-3">
+				<p onclick="es6.extendedParam()">Extended Param(): </p>
+				<p id="extendedParam"></p>
+			</div>
+			
+		</div>
+		
+		<div class="row">
+			
+			<div style="border:1px solid #ddd;" class="col-xs-3">
+				<p>Number Formatting(): 
+					<span onclick="es6.numberFormatting('en')">en</span> | <span onclick="es6.numberFormatting('de')">de</span>
+				</p>
+				<input type="text" id="numberFormattingInput" />
+				<p id="numberFormatting"></p>
+			</div>
+			
+			<div style="border:1px solid #ddd;" class="col-xs-3">
+				<p>Currency Formatting(): 
+					<span onclick="es6.currencyFormatting('en')">en</span> | <span onclick="es6.currencyFormatting('de')">de</span>
+				</p>
+				<input type="text" id="currencyFormattingInput" />
+				<p id="currencyFormatting"></p>
+			</div>
+			
+			<div style="border:1px solid #ddd;" class="col-xs-3">
+				<p>Date Formatting(yyyy-mm-dd): 
+					<span onclick="es6.dateFormatting('en')">en</span> | <span onclick="es6.dateFormatting('de')">de</span>
+				</p>
+				<input type="text" id="dateFormattingInput" />
+				<p id="dateFormatting"></p>
+			</div>
+			
+			<div style="border:1px solid #ddd;" class="col-xs-3">
+				<button onclick="es6.userClassTest()">Fire User Test()</button>
+			</div>
+			
+		</div>
+	
+	</div>
+	
+	<script>
+		es6.init();
+	</script>
+
+</body>
+
+</html>
